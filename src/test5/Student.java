@@ -1,6 +1,6 @@
 package test5;
 
-public class Student implements Comparable{
+public class Student implements Comparable<Student>{
 	private int num;
 	private String name;
 	private double score;
@@ -31,10 +31,11 @@ public class Student implements Comparable{
 	public String toString() {
 		return "{学号:"+num+"   姓名:" +name+"   综合成绩:"+score+"}";
 	}
-@Override
-public int compareTo(Object o) {
-	// TODO Auto-generated method stub
-	return 0;
-}
+	//按学号从小到大排列
+	@Override
+	public int compareTo(Student o) {
+		// TODO Auto-generated method stub
+		return this.num-o.num;
+	}
 
 }
