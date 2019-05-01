@@ -1,12 +1,12 @@
 package test5;
 
-public class Student {
+public class Student implements Comparable{
 	private int num;
 	private String name;
 	private double score;
 	public Student(int num,String name,double score) {
-		this.name= name;
 		this.num = num;
+		this.name= name;
 		this.score = score;	
 	}
 	public void setnum(int num) {
@@ -27,4 +27,14 @@ public class Student {
 	public double getscore() {
 		return score;
 	}
+	@Override
+	public String toString() {
+		return "{学号:"+num+"   姓名:" +name+"   综合成绩:"+score+"}";
+	}
+@Override
+public int compareTo(Object o) {
+	// TODO Auto-generated method stub
+	return 0;
+}
+
 }
