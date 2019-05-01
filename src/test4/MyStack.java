@@ -25,5 +25,9 @@ public class MyStack {
 		ms.push("李四");
 		ms.push("王五");
 		System.out.println(ms);
+		System.out.println(ms.pop());
+		System.out.println(ms.peek());
+		System.out.println(ms.empty());
+		System.out.println(ms);
 	}
 }
