@@ -1,6 +1,6 @@
 package test5;
 
-public class Student implements Comparable<Student>{
+public class Student implements Comparable<Student> {
 	private int num;
 	private String name;
 	private double score;
@@ -8,6 +8,9 @@ public class Student implements Comparable<Student>{
 		this.num = num;
 		this.name= name;
 		this.score = score;	
+	}
+	public Student() {
+		// TODO Auto-generated constructor stub
 	}
 	public void setnum(int num) {
 		this.num = num;
@@ -35,7 +38,8 @@ public class Student implements Comparable<Student>{
 	@Override
 	public int compareTo(Student o) {
 		// TODO Auto-generated method stub
-		return this.num-o.num;
+ 		return this.num-o.num;
+
 	}
 
 }
