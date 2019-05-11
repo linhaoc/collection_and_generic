@@ -11,10 +11,14 @@ class Student implements Comparable<Student> {
 		this.name= name;
 		this.score = score;	
 	}
+	
+	
 	@Override
 	public String toString() {
-		return "{学号:"+num+"   姓名:" +name+"   综合成绩:"+score+"}";
+		return "Student [num=" + num + ", name=" + name + ", score=" + score + "]";
 	}
+
+
 	@Override
 	public int compareTo(Student o) {
 		// TODO Auto-generated method stub
