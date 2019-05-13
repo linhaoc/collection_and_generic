@@ -25,9 +25,11 @@ public class Teacher {
 	public int getTnum() {
 		return Tnum;
 	}
-	
+
 	@Override
 	public String toString() {
-		return "{教师编号:"+Tnum+"   教师姓名:" +Tname+"}";
+		return "Teacher [Tname=" + Tname + ", Tnum=" + Tnum + "]";
 	}
+	
+	
 }

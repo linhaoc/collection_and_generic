@@ -25,9 +25,10 @@ public class Student implements Comparable<Student>{
 		public String getname() {
 			return name;
 		}
+		
 		@Override
 		public String toString() {
-			return "{学生学号:"+num+"   学生姓名:" +name+"}";
+			return "Student [num=" + num + ", name=" + name + "]";
 		}
 		//按学号从小到大排列
 		@Override
